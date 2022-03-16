@@ -2,22 +2,22 @@ package com.spring.tv;
 
 public class SamsungTV implements TV{
 	public SamsungTV() {
-		System.out.println("===> SamsungTV °´Ã¼ »ı¼º");
+		System.out.println("===> SamsungTV ê°ì²´ìƒì„±");
 	}
 	public void powerOn() {
-		System.out.println("SamsungTV---Àü¿ø ÄÒ´Ù.");
+		System.out.println("SamsungTV---ì „ì›ì¼œê¸°");
 	}
 
 	public void powerOff() {
-		System.out.println("SamsungTV---Àü¿ø ²ö´Ù.");
+		System.out.println("SamsungTV---ì „ì›ë„ê¸°");
 	}
 
 	public void volumeUp() {
-		System.out.println("SamsungTV---¼Ò¸® ¿Ã¸°´Ù.");
+		System.out.println("SamsungTV---ì†Œë¦¬ í‚¤ìš°ê¸°.");
 
 	}
 
 	public void volumeDown() {
-		System.out.println("SamsungTV---¼Ò¸® ³»¸°´Ù.");
+		System.out.println("SamsungTV---ì†Œë¦¬ ì¤„ì´ê¸°.");
 	}
 }

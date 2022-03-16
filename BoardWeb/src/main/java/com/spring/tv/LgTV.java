@@ -2,22 +2,22 @@ package com.spring.tv;
 
 public class LgTV implements TV {
 	public LgTV() {
-		System.out.println("===> LgTV) °´Ã¼ »ı¼º");
+		System.out.println("===> LgTV)ê°ì²´ìƒì„±");
 	}
 	public void powerOn() {
-		System.out.println("LgTV---Àü¿ø ÄÒ´Ù.");
+		System.out.println("LgTV---ì „ì› ì¼œê¸°");
 	}
 
 	public void powerOff() {
-		System.out.println("LgTV---Àü¿ø ²ö´Ù.");
+		System.out.println("LgTV---ì „ì›ë„ê¸°.");
 	}
 
 	public void volumeUp() {
-		System.out.println("LgTV---¼Ò¸® ¿Ã¸°´Ù.");
+		System.out.println("LgTV---ì†Œë¦¬ í‚¤ìš°ê¸°");
 
 	}
 
 	public void volumeDown() {
-		System.out.println("LgTV---¼Ò¸® ³»¸°´Ù.");
+		System.out.println("LgTV---ì†Œë¦¬ ì¤„ì´ê¸°.");
 	}
 }

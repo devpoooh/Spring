@@ -1,20 +1,18 @@
 package com.spring.tv;
 
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
 public class TVUser {
 	public static void main(String[] args) {
-		//객체를 생성하는 클래스 생성
-		BeanFactory factory = new BeanFactory(); //1. 객체 생성
-		//2. getBean() 메서드 호출
-		TV tv = (TV) factory.getBean(args[0]); //"samsung" or "lg" args는 run as에서 알규먼트 넣을 수 있음. *(별첨)참고
-		//4. (리턴받은)객체를 이용하여 실행
+		//1. spring 컨테이너 구동 (.xml을 로딩하여 구동한다.)
+		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
+		
+		//2. spring 컨테이너로부터 필요한 객체를 요청한다.
+		TV tv= (TV)factory.getBean("tv"); //xml의 id로 요청
 		tv.powerOn();
 		tv.volumeUp();
 		tv.volumeDown();
-		tv.powerOff();	
+		tv.powerOff();
 	}
 }
-
-/*
- * 아규먼트 넣기
- * 마우스 우클릭 - run as - run configurations - arguments에 값 입력 - run
- * */
